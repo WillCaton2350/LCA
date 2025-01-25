@@ -1,9 +1,8 @@
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode(object):
+    def __init__(self, _):
+        self.val = _
+        self.left = None
+        self.right = None
 
 class Solution(object):
     def lowestCommonAncestor(self, root, p, q):
@@ -13,4 +12,4 @@ class Solution(object):
             return self.lowestCommonAncestor(root.right,p,q)
         else:
             return root
-        # This is the recursive solution the function calls its self with smaller sub problems until a base case is met. Base Case == return root / sub problems == if and elif conditions
+        # This is the recursive solution because the function calls itself with sub / nested conditions until a base case is met. Base Case == return root / sub problems == if and elif conditions
