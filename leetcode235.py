@@ -21,3 +21,4 @@ class Solution(object):
             return root
         # This is the recursive solution because the function calls itself with sub / nested conditions until a base case is met. 
         # Base Case == return root / sub problems == if and elif conditions
+        # The value of the node matters, The left node must be smaller than the central node and that must be smaller than the right node.
