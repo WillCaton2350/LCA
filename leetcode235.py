@@ -23,4 +23,10 @@ class Solution(object):
             return root
         # This is the recursive solution because the function calls itself with sub / nested conditions until a base case is met. 
         # Base Case == return root / sub problems == if and elif conditions
+        # In a BST the values in the left subtree must be smaller than the root node and the values in the right subtree must be greater than the root node.
         # The value of the node matters, The left node must be smaller than the central node and that must be smaller than the right node.
+
+# There are edge cases where p and q are split across both subtrees.
+# in that case the LCA is the root node
+# Edge case 2: is where p is a decendant of itself and q is a decendant of p. 
+# in that case p is the LCA
